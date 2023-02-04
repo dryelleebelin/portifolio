@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Poppins:wght@100;200;300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'oswald', sans-serif;
+    color: #ffffff;
+}
+
+.texto-secundario {
+    color: #bbbbbb; 
+    font-family: 'poppins', arial;
+    margin-bottom: 15px;
+}
+
+main {
+    background-color: #111;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0px 100px;
+}
+.botao-cv {
+    width: 120%;
+    height: 40px;
+    background-color: #111;
+    outline: none;
+    border: 1px solid #ffffff;
+    font-size: 82%;
+    font-family: 'poppins', arial;
+    cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.botao-cv:hover {
+    background-color: #202020;
+}
+.logo {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+
+.section-sobre {
+    display: flex;
+}
+.sobre-lado-esquerdo {
+
+}
+.sobre-titulo {
+
+}
+.sobre-lado-direito {
+
+}
+
+
+.section-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.section-tecnologias > div {
+    width: 340px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-projetos {
+
+}
+.section-projetos > h1 {
+    font-size: 60px;
+}
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.projetos-item {
+    width: 450px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    background-color: #202020;
+    display: flex;
+    width: 100%;
+    padding: 40px 100px;
+}
+.footer-titulo {
+    margin-bottom: 30px;
+}
+.footer-contatos {
+    width: 40vw;
+    padding-right: 50px;
+}
+.redes-sociais-container > a > img {
+    width: 30px;
+    margin: 6px 20px 12px 0px;
+}
+
+
+form {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+.form-container-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-container-input > input {
+    width: 48%;
+    height: 55px;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #111;
+    border: none;
+    padding-left: 20px;
+    font-size: 100%;
+    font-family: 'poppins', arial;
+    box-shadow: none;
+    outline: none;
+    color: #bbbbbb;
+}
+form > div > input::placeholder {
+    color: #ffffff;
+}
+form > div > input:nth-child(5) {
+    width: 100%;
+    height: 145px;
+    padding-bottom: 13%;
+}
+.form-botao {
+    width: 15%;
+    height: 40px;
+    background-color: #111;
+    outline: none;
+    border: none;
+    font-size: 100%;
+    font-family: 'poppins', arial;
+    cursor: pointer;
+}
