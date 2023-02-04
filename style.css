@@ -49,15 +49,6 @@ nav {
 .section-sobre {
     display: flex;
 }
-.sobre-lado-esquerdo {
-
-}
-.sobre-titulo {
-
-}
-.sobre-lado-direito {
-
-}
 
 
 .section-tecnologias {
@@ -75,9 +66,6 @@ nav {
 }
 
 
-.section-projetos {
-
-}
 .section-projetos > h1 {
     font-size: 65px;
     margin-left: 7%;
@@ -94,6 +82,10 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all .5s ease-in-out;
+}
+.projetos-item:hover {
+    transform: scale(1.1);
 }
 .projetos-item:nth-last-child(1) {
     margin-bottom: 40px;
