@@ -23,8 +23,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15vh;
+    height: 17vh;
     padding: 0px 100px;
+}
+nav > a {
+    margin-left: 420px;
+}
+.back-imagem {
+    background-color: #202020;
+    width: 348px;
+    height: 100%;
 }
 .botao-cv {
     width: 120%;
@@ -48,13 +56,58 @@ nav {
 
 .section-sobre {
     display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+    height: 70vh;
+}
+.sobre-lado-esquerdo {
+    width: 65vw;
+    padding-top: 60px;
+}
+.sobre-titulo > h2 {
+    font-weight: 400;
+    letter-spacing: 8px;
+}
+.sobre-titulo > h1 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.sobre-lado-esquerdo > p {
+    width: 90%;
+    font-family: 'poppins', arial;
+}
+.botao-contato {
+    margin-top: 11%;
+    width: 32%;
+    height: 40px;
+    background-color: #111;
+    border: 1px solid #ffffff;
+    font-size: 82%;
+    font-family: 'poppins', arial;
+    cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.botao-contato:hover {
+    background-color: #202020;
+}
+.sobre-lado-direito {
+    width: 35vw;
+}
+.sobre-lado-direito > img {
+    height: 100%;
+    margin-left: 52px;
+    background-color: #202020;
 }
 
 
 .section-tecnologias {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    border-top: 3px solid #ffffff;
+    margin: 100px 7% 100px 7%;
+    padding-top: 60px;
+    padding-left: 40px;
 }
 .section-tecnologias > div {
     width: 340px;
@@ -63,6 +116,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.section-tecnologias > div > h1 {
+    font-size: 40px;
+}
+.section-tecnologias > div > p {
+    color: #bbbbbb; 
+    font-family: 'poppins', arial;
 }
 
 
@@ -166,4 +226,16 @@ form > div > input:nth-child(5) {
     font-size: 100%;
     font-family: 'poppins', arial;
     cursor: pointer;
+}
+form > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+.arrow {
+    height: 40px;
+    background-color: #111;
+}
+.arrow > img {
+    height: 40px;
+    padding: 15%;
 }
