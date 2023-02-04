@@ -79,7 +79,9 @@ nav {
 
 }
 .section-projetos > h1 {
-    font-size: 60px;
+    font-size: 65px;
+    margin-left: 7%;
+    margin-bottom: 15px;
 }
 .projetos-container {
     display: flex;
@@ -87,12 +89,25 @@ nav {
     justify-content: space-evenly;
 }
 .projetos-item {
-    width: 450px;
+    width: 39%;
     height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+.projetos-item:nth-last-child(1) {
+    margin-bottom: 40px;
+}
+.projetos-item div {
+    display: flex;
+}
+.projetos-item div > p {
+    color: #bbbbbb; 
+    font-family: 'poppins', arial;
+    margin-right: 20px;
+}
+.projetos-imagem {
+    width: 100%;
 }
 
 
