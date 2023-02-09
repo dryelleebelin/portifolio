@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Poppins:wght@100;200;300;500&display=swap');
 
+
+/*estilização geral*/
 * {
     padding: 0;
     margin: 0;
@@ -7,32 +9,28 @@
     font-family: 'oswald', sans-serif;
     color: #ffffff;
 }
-
-.texto-secundario {
-    color: #bbbbbb; 
-    font-family: 'poppins', arial;
-    margin-bottom: 15px;
+.logo {
+    font-weight: 500;
+    font-size: 32px;
 }
-
-main {
+main, .section-projetos, .section-tecnologias {
     background-color: #111;
 }
+main {
+    display: flex;
+}
+main > div:first-child {
+    width: 73%;
+}
 
 
+/*navbar*/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 17vh;
-    padding: 0px 100px;
-}
-nav > a {
-    margin-left: 420px;
-}
-.back-imagem {
-    background-color: #202020;
-    width: 348px;
-    height: 100%;
+    padding: 0px 9%;
 }
 .botao-cv {
     width: 120%;
@@ -48,38 +46,33 @@ nav > a {
 .botao-cv:hover {
     background-color: #202020;
 }
-.logo {
-    font-weight: 500;
-    font-size: 32px;
-}
 
 
+/*seção principal*/
 .section-sobre {
     display: flex;
-    margin-left: 7%;
-    margin-right: 7%;
+    flex-direction: column;
+    margin-left: 9%;
     height: 70vh;
-}
-.sobre-lado-esquerdo {
     width: 65vw;
     padding-top: 60px;
 }
-.sobre-titulo > h2 {
+.section-sobre > div > h2 {
     font-weight: 400;
     letter-spacing: 8px;
 }
-.sobre-titulo > h1 {
+.section-sobre > div > h1 {
     font-size: 45px;
     font-weight: 900;
     margin-bottom: 20px;
 }
-.sobre-lado-esquerdo > p {
+.section-sobre > p {
     width: 90%;
     font-family: 'poppins', arial;
 }
 .botao-contato {
-    margin-top: 11%;
-    width: 32%;
+    margin-top: 12.5%;
+    width: 25%;
     height: 40px;
     background-color: #111;
     border: 1px solid #ffffff;
@@ -91,26 +84,22 @@ nav > a {
 .botao-contato:hover {
     background-color: #202020;
 }
-.sobre-lado-direito {
-    width: 35vw;
-}
-.sobre-lado-direito > img {
+.imagem-principal > img {
     height: 100%;
-    margin-left: 52px;
     background-color: #202020;
 }
 
 
+/*seção das hard skills*/
 .section-tecnologias {
     display: flex;
     flex-wrap: wrap;
-    border-top: 3px solid #ffffff;
-    margin: 100px 7% 80px 7%;
+    padding: 100px 1% 80px 20%;
     padding-top: 60px;
     padding-left: 40px;
 }
 .section-tecnologias > div {
-    width: 340px;
+    width: 30vw;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -126,12 +115,13 @@ nav > a {
 }
 
 
+/*seção dos projetos*/
 .section-projetos > h1 {
     font-size: 65px;
     margin-left: 7%;
     margin-bottom: 15px;
 }
-.projetos-container {
+.section-projetos > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -150,53 +140,63 @@ nav > a {
 .projetos-item:nth-last-child(1) {
     margin-bottom: 40px;
 }
-.projetos-item div {
+.projetos-item > div {
     display: flex;
 }
-.projetos-item div > p {
+.projetos-item > div > p {
     color: #bbbbbb; 
     font-family: 'poppins', arial;
     margin-right: 20px;
 }
-.projetos-imagem {
+.projetos-item > a > img {
     width: 100%;
     transition: all .6s ease-in-out;
 }
-.projetos-imagem:hover {
+.projetos-item > a > img:hover {
     filter: opacity(60%);
 }
 
 
+/*última seção lado dos meus contatos*/
 footer {
     background-color: #202020;
     display: flex;
     width: 100%;
     padding: 40px 100px;
 }
-.footer-titulo {
-    margin-bottom: 30px;
-}
-.footer-contatos {
+footer > div {
     width: 40vw;
     padding-right: 50px;
 }
-.redes-sociais-container > a > img {
+footer > div > div > h1 {
+    margin-bottom: 30px;
+}
+footer > div > div > p {
+    color: #bbbbbb; 
+    font-family: 'poppins', arial;
+    margin-bottom: 15px;
+}
+footer > div > div > div > a > img {
     width: 30px;
     margin: 6px 20px 12px 0px;
 }
 
 
+/*última seção lado do formulário*/
 form {
     width: 60vw;
     display: flex;
     flex-direction: column;
 }
-.form-container-input {
+form > h1 {
+    margin-bottom: 30px;
+}
+.form-inputs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.form-container-input > input {
+.form-inputs > input {
     width: 48%;
     height: 55px;
     margin-bottom: 4%;
@@ -213,15 +213,15 @@ form {
     outline: none;
     color: #bbbbbb;
 }
-form > div > input::placeholder {
+.form-inputs > input::placeholder {
     color: #ffffff;
 }
-form > div > input:nth-child(5) {
+.form-inputs > input:nth-child(5) {
     width: 100%;
     height: 145px;
     padding-bottom: 13%;
 }
-.form-botao {
+.botao-form {
     width: 15%;
     height: 40px;
     background-color: #111;
@@ -234,6 +234,7 @@ form > div > input:nth-child(5) {
 form > div:last-child {
     display: flex;
     justify-content: space-between;
+    background-color: #202020;
 }
 .arrow {
     height: 40px;
@@ -241,5 +242,91 @@ form > div:last-child {
 }
 .arrow > img {
     height: 40px;
-    padding: 15%;
+    padding: 16%;
+}
+
+
+/*responsividade*/
+@media screen and (max-width: 1150px) {
+}
+
+@media only screen and (max-width: 950px) { 
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        flex-direction: column;
+    }
+    nav {
+        height: 15vh;
+    }
+    .botao-cv {
+        width: 160%;
+        font-size: 75%;
+    }
+    .section-sobre {
+        height: 100%;
+    }
+    .section-sobre {
+        padding-top: 40px;
+    }
+    .sobre-titulo > h2 {
+        font-size: 15px;
+    }
+    .sobre-titulo > h1 {
+        font-size: 30px;
+    }
+    .section-sobre > p {
+        width: 100%;
+    }
+    .botao-contato {
+        width: 100%;
+    }
+    .sobre-lado-direito {
+        display: none;
+    }
+    .section-projetos > h1 {
+        font-size: 55px;
+        margin-left: 8%;
+        margin-bottom: none;
+    }
+    .projetos-item {
+        width: 80%;
+        height: 350px;
+    }
+    .projetos-item:nth-last-child(1) {
+        margin-bottom: 30px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 40px;
+    }
+    .footer-titulo {
+        width: 80vw;
+    }
+    .footer-contatos > div > p:first-child {
+        width: 80vw;
+    }
+    .redes-sociais-container {
+        width: 50vw;
+        margin-bottom: 40px;
+    }
+    .logonome:last-child {
+        display: none;
+    }
+    form {
+        width: 80vw;
+    }
+    form > div > input::placeholder {
+        font-size: 90%;
+    }
+    form > div > input:nth-child(5) {
+        height: 190px;
+        padding-bottom: 32%;
+    }
+    .form-botao {
+        width: 20%;
+        font-size: 90%;
+    }
 }
