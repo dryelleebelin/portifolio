@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', arial;
+    background-color: #eee;
+    color: #000;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header > h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+
+.itens {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+
+.itens > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itens:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    height: 5rem;
+}
