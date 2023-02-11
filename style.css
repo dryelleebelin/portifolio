@@ -247,86 +247,113 @@ form > div:last-child {
 
 
 /*responsividade*/
-@media screen and (max-width: 1150px) {
-}
-
-@media only screen and (max-width: 950px) { 
-}
-
-@media only screen and (max-width: 500px) {
-    main {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 1070px) {
     nav {
-        height: 15vh;
-    }
-    .botao-cv {
-        width: 160%;
-        font-size: 75%;
+        height: 13vh;
     }
     .section-sobre {
-        height: 100%;
+        padding-top: 10px;
     }
-    .section-sobre {
-        padding-top: 40px;
+    .section-sobre > div > h2 {
+        letter-spacing: 6px;
     }
-    .sobre-titulo > h2 {
-        font-size: 15px;
-    }
-    .sobre-titulo > h1 {
-        font-size: 30px;
-    }
-    .section-sobre > p {
-        width: 100%;
+    .section-sobre > div > h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
     }
     .botao-contato {
-        width: 100%;
+        margin-top: 14vh;
+        width: 35%;
     }
-    .sobre-lado-direito {
-        display: none;
+    .imagem-principal > img {
+        height: 90%;
+    }
+    .section-tecnologias > div > h1 {
+        font-size: 35px;
     }
     .section-projetos > h1 {
         font-size: 55px;
-        margin-left: 8%;
-        margin-bottom: none;
-    }
-    .projetos-item {
-        width: 80%;
-        height: 350px;
-    }
-    .projetos-item:nth-last-child(1) {
-        margin-bottom: 30px;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        padding: 40px 40px;
-    }
-    .footer-titulo {
-        width: 80vw;
-    }
-    .footer-contatos > div > p:first-child {
-        width: 80vw;
-    }
-    .redes-sociais-container {
-        width: 50vw;
-        margin-bottom: 40px;
-    }
-    .logonome:last-child {
-        display: none;
+        margin-bottom: 0;
     }
     form {
+        width: 50vw;
+    }
+    .logo:last-child {
+        display: none;
+    }
+    .botao-form {
+        width: 22%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .section-sobre > div > h1 {
+        width: 94%;
+        line-height: 45px;
+    }
+    .botao-contato {
+        display: none;
+    }
+    .section-sobre > p {
+        width: 85%;
+    }
+    .section-tecnologias {
+        padding: 80px 1% 70px 10%;
+    }
+    .section-tecnologias > div {
+        width: 40vw;
+    }
+    .section-tecnologias > div > h1 {
+        font-size: 35px;
+    }
+    footer {
+        padding: 40px 50px;
+    }
+}
+@media only screen and (max-width: 630px) {
+    main > div:first-child {
+        width: 100%;
+    }
+    .imagem-principal > img {
+    display: none;
+    }
+    .section-sobre {
+        height: 75vh;
+        width: 87vw;
+        padding-top: 15px;
+    }
+    .section-sobre > div > h2 {
+        letter-spacing: 6px;
+        font-size: 20px;
+    }
+    .section-sobre > div > h1 {
+        font-size: 32px;
+    }
+    .section-tecnologias {
+        padding-left: 40px;
+    }
+    .section-tecnologias > div {
         width: 80vw;
     }
-    form > div > input::placeholder {
-        font-size: 90%;
+    .section-projetos > h1 {
+    font-size: 55px;
+    margin-bottom: 0;
     }
-    form > div > input:nth-child(5) {
-        height: 190px;
-        padding-bottom: 32%;
+    .projetos-item {
+    width: 70%;
+    height: 360px;
     }
-    .form-botao {
-        width: 20%;
-        font-size: 90%;
+    footer {
+        flex-direction: column;
+        padding: 40px 60px;
+    }
+    footer > div {
+        width: 80vw;
+        padding-right: 50px;
+    }
+    form {
+        width: 75vw;
+    }
+    form > h1 {
+        margin-top: 40px;
     }
 }
