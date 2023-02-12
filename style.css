@@ -55,7 +55,7 @@ nav {
     margin-left: 9%;
     height: 70vh;
     width: 65vw;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 .section-sobre > div > h2 {
     font-weight: 400;
@@ -71,7 +71,7 @@ nav {
     font-family: 'poppins', arial;
 }
 .botao-contato {
-    margin-top: 12%;
+    margin-top: 9%;
     width: 25%;
     height: 40px;
     background-color: #111;
