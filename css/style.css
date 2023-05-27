@@ -6,20 +6,11 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   /* 
-      Change favorite color
-      Default: hsl(162, 100%, 40%)
-      Orange: hsl(14, 100%, 65%) - Blue: hsl(210, 100%, 70%)
-      Pink: hsl(356, 100%, 75%) - Purple: hsl(250, 100%, 75%)
-
-      For more colors visit: https://colors.dopely.top/color-pedia
-      -> Choose any color 
-      -> click on tab (Color Conversion)
-      -> Copy the color mode (HSL)
+      For more colors: https://colors.dopely.top/color-pedia
   */
 
-  --hue: 231;
+  --hue: 250;
   --first-color: hsl(var(--hue), 44%, 63%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(228, 8%, 95%);
@@ -52,8 +43,8 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1152px) {
   :root {
-    --biggest-font-size: 4rem;
-    --bigger-font-size: 2rem;
+    --biggest-font-size: 3.3rem;
+    --bigger-font-size: 1.7rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -193,9 +184,9 @@ svg {
         top: 0;
         right: -100%;
         background-color: hsla(0, 0%, 10%, .3);
-        width: 75%;
+        width: 60%;
         height: 100%;
-        padding: 4.5rem 0 0 3rem;
+        padding: 4rem 0 0 3rem;
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
         transition: right .4s;
@@ -205,7 +196,7 @@ svg {
 .nav__list{
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 2.5rem;
 }
 
 .nav__link{
@@ -324,7 +315,7 @@ svg {
 .button{
     display: inline-block;
     background-color: var(--first-color);
-    padding: 1rem 1.75rem;
+    padding: 0.5rem 1.3rem;
     border-radius: .5rem;
     color: var(--title-color);
     transition: box-shadow .4s;
@@ -345,6 +336,7 @@ svg {
 
 .about__description{
   margin-bottom: 2rem;
+  padding: 0 2rem;
 }
 
 .about__image{
@@ -546,7 +538,7 @@ svg {
 .contact__message{
   position: absolute;
   left: 0;
-  bottom: 4.5rem;
+  bottom: 4rem;
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
@@ -558,7 +550,6 @@ svg {
 }
 
 .footer__container{
-  row-gap: 2rem;
   text-align: center;
 }
 
@@ -713,13 +704,13 @@ svg {
     padding-block: 5rem 2rem !important;
   }
   .section{
-    padding-block: 7rem 2rem;
+    padding-block: 6rem 2rem;
   }
   .section__subtitle{
     font-size: var(--normal-font-size);
   }
   .nav{
-    height: calc(var(--header-height) + 1.5rem);
+    height: calc(var(--header-height) + 1rem);
   }
   .nav__close,
   .nav__toggle{
@@ -727,7 +718,8 @@ svg {
   }
   .nav__list{
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 2.3rem;
+    margin-right: 3.7rem;
   }
   .nav__menu{
     width: initial;
@@ -750,10 +742,10 @@ svg {
     padding-block: 2rem 3rem;
   }
   .home__blob{
-    width: 550px;
+    width: 460px;
   }
   .home__content{
-    row-gap: 4.5rem;
+    row-gap: 3.5rem;
   }
   .home__description{
     margin-block: 1.5rem 2.5rem;
@@ -767,10 +759,11 @@ svg {
     padding-bottom: 1rem;
   }
   .about__blob{
-    width: 550px;
+    width: 470px;
   }
   .about__description{
     margin-bottom: 3rem;
+    padding: 0 0;
   }
   .skills__container{
     grid-template-columns: 340px 425px;
@@ -790,11 +783,11 @@ svg {
     font-size: var(--h3-font-size);
   }
   .services__container{
-    grid-template-columns: repeat(3, 352px);
-    padding-block: 2.5rem 4rem;
+    grid-template-columns: repeat(3, 330px);
+    padding-block: 1rem 3rem;
   }
   .services__card{
-    padding: 3.5rem 2rem;
+    padding: 3rem 2rem;
   }
   .projects__container{
     grid-template-columns: repeat(3, 350px);
@@ -805,7 +798,7 @@ svg {
     font-size: var(--normal-font-size);
   }
   .contact__container{
-    grid-template-columns: 680px;
+    grid-template-columns: 650px;
     padding-block: 2.5rem 2rem;
   }
   .contact__form{
@@ -816,10 +809,10 @@ svg {
     column-gap: 1.5rem;
   }
   .contact__input{
-    padding: 1.5rem;
+    padding: 1rem;
   }
   .contact__form textarea{
-    height: 15rem;
+    height: 13rem;
   }
   .footer{
     padding-block: 4.5rem 4rem;
