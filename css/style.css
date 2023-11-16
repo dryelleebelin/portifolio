@@ -637,6 +637,15 @@ svg {
   bottom: 3rem;
 }
 
+@media screen and (max-width: 1080px){
+  .home__blob {
+    margin-left: 0rem;
+  }
+  .skills__content{
+    margin-left: 10vw;
+  }
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
