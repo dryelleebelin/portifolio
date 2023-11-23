@@ -38,13 +38,13 @@ window.addEventListener('scroll', blurHeader)
 
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
-contactMessage = document.getElementById('contact-message')
+    contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e) => {
     e.preventDefault()
 
     // serviceID - templateID - #form - publicKey
-    emailjs.sendForm('service_38fossd', 'template_whvh90g', '#contact-form', 'gW-le0GkiQdf30xUt')
+    emailjs.sendForm('service_fups4ef', 'template_ec9r345', '#contact-form', 'gW-le0GkiQdf30xUt')
     .then(() => {
         //show sent message
         contactMessage.textContent = 'Mensagem enviada com sucesso ✅'
